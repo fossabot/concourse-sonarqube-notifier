@@ -12,5 +12,5 @@ RUN mkdir -p /assets \
  && go build -a -installsuffix cgo -o /assets/check github.com/concourse-sonarqube-notifier/assets/check/main
 
 FROM scratch
-COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=build /etc/ssl/certs/ /etc/ssl/certs
 COPY --from=build assets/ /opt/resource/
