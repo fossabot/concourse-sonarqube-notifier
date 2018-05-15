@@ -98,7 +98,6 @@ var _ = Describe("In", func() {
 		Expect(component).To(Equal("my:component"))
 		Expect(metrics).To(Equal("ncloc,complexity,violations,coverage"))
 
-
 		expectedResponse := `{"version":{"ref":"61cebf"}}`
 		response := make([]byte, len(expectedResponse), len(expectedResponse))
 		stdout.Read(response)

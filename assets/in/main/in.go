@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"errors"
-	. "github.com/concourse-sonarqube-notifier/assets/shared"
 	"io"
 	"io/ioutil"
 	"log"

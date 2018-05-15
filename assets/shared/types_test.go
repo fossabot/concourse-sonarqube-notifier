@@ -12,50 +12,50 @@ var _ = Describe("Types", func() {
 	Describe("Source", func() {
 		It("valid - returns true when all mandatory fields are filled", func() {
 			src := shared.Source{
-				Target: "Target",
+				Target:     "Target",
 				SonarToken: "Token",
-				Metrics: "Metrics",
-				Component: "Component",
+				Metrics:    "Metrics",
+				Component:  "Component",
 			}
 			Expect(src.Valid()).To(Equal(true))
 		})
 
 		It("valid - requires a target", func() {
 			src := shared.Source{
-				Target: "",
+				Target:     "",
 				SonarToken: "Token",
-				Metrics: "Metrics",
-				Component: "Component",
+				Metrics:    "Metrics",
+				Component:  "Component",
 			}
 			Expect(src.Valid()).To(Equal(false))
 		})
 
 		It("valid - requires a sonartoken", func() {
 			src := shared.Source{
-				Target: "target",
+				Target:     "target",
 				SonarToken: "",
-				Metrics: "Metrics",
-				Component: "Component",
+				Metrics:    "Metrics",
+				Component:  "Component",
 			}
 			Expect(src.Valid()).To(Equal(false))
 		})
 
 		It("valid - requires metrics", func() {
 			src := shared.Source{
-				Target: "target",
+				Target:     "target",
 				SonarToken: "Token",
-				Metrics: "",
-				Component: "Component",
+				Metrics:    "",
+				Component:  "Component",
 			}
 			Expect(src.Valid()).To(Equal(false))
 		})
 
 		It("valid - requires a component", func() {
 			src := shared.Source{
-				Target: "target",
+				Target:     "target",
 				SonarToken: "Token",
-				Metrics: "Metrics",
-				Component: "",
+				Metrics:    "Metrics",
+				Component:  "",
 			}
 			Expect(src.Valid()).To(Equal(false))
 		})

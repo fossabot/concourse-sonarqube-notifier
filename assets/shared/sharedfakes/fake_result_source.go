@@ -8,8 +8,8 @@ import (
 )
 
 type FakeResultSource struct {
-	GetResultStub        func(url string, authToken string, component string, metrics string) ([]byte, error)
-	getResultMutex       sync.RWMutex
+	GetResultStub  func(url string, authToken string, component string, metrics string) ([]byte, error)
+	getResultMutex sync.RWMutex
 	getResultArgsForCall []struct {
 		url       string
 		authToken string
@@ -24,8 +24,8 @@ type FakeResultSource struct {
 		result1 []byte
 		result2 error
 	}
-	GetVersionsStub        func(baseUrl string, authToken string, component string) ([]byte, error)
-	getVersionsMutex       sync.RWMutex
+	GetVersionsStub  func(baseUrl string, authToken string, component string) ([]byte, error)
+	getVersionsMutex sync.RWMutex
 	getVersionsArgsForCall []struct {
 		baseUrl   string
 		authToken string
@@ -39,7 +39,7 @@ type FakeResultSource struct {
 		result1 []byte
 		result2 error
 	}
-	invocations      map[string][][]interface{}
+	invocations map[string][][]interface{}
 	invocationsMutex sync.RWMutex
 }
 

@@ -95,7 +95,6 @@ var _ = Describe("Check", func() {
 		Expect(token).To(Equal("token"))
 		Expect(component).To(Equal("my:component"))
 
-
 		expectedResponse := `[{"timestamp":"2018-03-08T14:31:37+0100"},{"timestamp":"2018-03-22T15:15:48+0100"},{"timestamp":"2018-03-26T11:51:30+0200"},{"timestamp":"2018-04-04T15:32:28+0200"},{"timestamp":"2018-04-06T14:27:06+0200"}]`
 		response := make([]byte, len(expectedResponse), len(expectedResponse))
 		stdout.Read(response)

@@ -5,7 +5,6 @@ import (
 	"github.com/concourse-sonarqube-notifier/assets/shared"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"gopkg.in/jarcoal/httpmock.v1"
 	"log"
 	"net/http"
 )
