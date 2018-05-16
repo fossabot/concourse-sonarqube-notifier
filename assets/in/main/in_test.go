@@ -14,7 +14,6 @@ var _ = Describe("In", func() {
 	var (
 		stdin            *bytes.Buffer
 		stdout           *bytes.Buffer
-		stderr           *bytes.Buffer
 		fakeResultSource *sharedfakes.FakeResultSource
 		tmpDownloadDir   string
 	)
@@ -22,7 +21,6 @@ var _ = Describe("In", func() {
 	BeforeEach(func() {
 		stdin = new(bytes.Buffer)
 		stdout = new(bytes.Buffer)
-		stderr = new(bytes.Buffer)
 		fakeResultSource = new(sharedfakes.FakeResultSource)
 		var err error
 		tmpDownloadDir, err = ioutil.TempDir("", "concourse-sonarqube")
