@@ -1,4 +1,6 @@
 # SonarQube Notification Resource
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjaedle%2Fconcourse-sonarqube-notifier.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjaedle%2Fconcourse-sonarqube-notifier?ref=badge_shield)
+
 
 Gets Sonarqube results.
 
@@ -107,3 +109,7 @@ Example response (metrics: nloc,complexity,violations,coverage)
 ```
 
 ## `out`: Nothing
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjaedle%2Fconcourse-sonarqube-notifier.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjaedle%2Fconcourse-sonarqube-notifier?ref=badge_large)
